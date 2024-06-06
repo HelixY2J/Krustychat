@@ -4,4 +4,4 @@ from .consumers import *
 websocket_urlpatterns = [
     path("ws/chatroom/<chatroom_name>",ChatroomConsumer.as_asgi()),
     
-]
+]# r"ws/chatroom/(?P<chatroom_name>[\w-]+)"

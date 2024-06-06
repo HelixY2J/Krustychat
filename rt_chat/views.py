@@ -5,7 +5,7 @@ from .forms import *
 
 @login_required
 def chat_view(request):
-    chat_grp = get_object_or_404(chatGrp, group_name="plankton plays")
+    chat_grp = get_object_or_404(chatGrp, group_name="plankton_plays")
     chat_messages = chat_grp.chat_messages.all()[:30]
     form = Chatmsgform()
 
