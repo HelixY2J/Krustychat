@@ -4,9 +4,7 @@ This chat application is implemented by Django, HTMX, Websockets and Redis.Initi
 
 ![Architecture](./img/krusty%20_design02.png)
 
-### htmx websockets extension
 
-[htmx](https://htmx.org/extensions/web-sockets/) is used to established a websocket connection allowing for real time communication between the browser and server. It uses 'ws-send' attribute to specify that after submission the form values are serialized as JSON and sent by websocket connection.  The 'ws-connect' attribute initializes the WebSocket connection while the hx-ext="ws" extension and the _="on htmx:wsAfterSend reset() me" attribute ensure the form is reset after each message is sent 
 
 
 ## Installation
