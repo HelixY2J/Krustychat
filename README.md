@@ -2,7 +2,7 @@
 
 This chat application is implemented by Django, HTMX, Websockets and Redis.Initially, the browser makes a standard HTTP request to the server to fetch the chat page.Once the page is loaded, HTMX triggers a request to upgrade to a WebSocket connection, allowing asynchronous communication between the browser and server via Django Channels.Each user is assigned an unique channel and to broadcast messages in real time to multiple users,channel layers are used which group individual channels. For efficient communication management,Redis is integrated to provide better in memory storage and caching.
 
-![Architecture](./img/krusty_design.png)
+![Architecture](./img/krusty%20_design02.png)
 
 ### htmx websockets extension
 
